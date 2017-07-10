@@ -1,0 +1,262 @@
+/*Estilo da página de teste estágio - Layout Avec*/
+
+/*Importando as fontes retiradas do google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans+Condensed:300|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Mallanna');
+
+/*Linha gradiente(linear gradient) fixada ao topo da página*/
+.grad1{
+background-image: linear-gradient(to right, #8585C1, #a97cc1 49%,#AC7BC1,#BF77C1, #bc77c1 50%, #d471c1);
+transition: all .5s;
+height:auto;
+padding: 5px 0;
+color:#fff;
+font-size:90px;
+text-align:center;
+
+}
+
+/*NAVBAR*/
+/*Definindo altura e largura máxima do logo*/
+a img{
+    max-height: 40px;
+    max-width: 100px;
+    position:absolute;
+}
+
+/*Menu de botoes, definindo transparencia, borda, fonte, tamanho e alinhamento*/
+.btn_class {
+   border-top-color: transparent;
+   background-color:transparent;
+   padding: 6px 18px;
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 1px;
+   color: #8585c1;
+   font-family: 'Dosis', sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: right;
+}
+
+/*quando cursor passa no botao, definindo cor de fundo e cor da fonte, o formato já foi definido anteriormente*/
+.btn_class:hover {
+   background: #8585c1;
+   color: #ffffff !important;
+}
+/*Retirando hiperlink do texto do botão*/
+a.btn_class:link{
+    text-decoration: none;
+}
+
+
+/*FIM DA NAVBAR - CABEÇALHO*/
+
+
+/*BANNER*/
+
+/*Banner principal como background, fazendo busca src pelo css para que fique fixo e se possa criar botoes sobre a imagem.*/
+.banner{
+	background:url(../img/banner.jpg) no-repeat 0px 0px !important;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	max-height: 630px;
+	text-align: center;
+	padding: 70px;
+}
+
+.banner_grids{
+	padding:8em 0;
+}
+
+.banner_grid{
+	text-align:center;
+}
+
+
+/*Configurando header: cor, fonte, tamanho e espaçamento*/
+.banner h1{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+/*Configurando header: cor, fonte, tamanho e espaçamento*/
+.banner h3{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding-bottom:30px;
+    font-size: 30px;
+}
+
+/*Dando espaço entre blocos para botões(Iphone e Android)*/
+.btn_ia{
+    margin-top: 40px;    
+}
+
+/*Espaçamento entre outro botão*/
+#iphone{
+    margin-right: 18px;
+}
+
+/*Espaçamento entre outro botão*/
+#android{
+    margin-left: 18px;
+}
+
+/*Configurando cor, formato da borda, fonte e demais estilos para botão do banner principal*/
+.btn_banner {
+   border-top-color: transparent;
+   background-color:transparent;
+   padding: 10px 26px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   color: #fff;
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: right;
+   border: solid #ffffff 2px!important;
+}
+
+/*Configurando mudança de cor para botão do banner principal quando entrar em contato com mouse*/
+.btn_banner:hover {
+   background: #fff;
+   color: black!important;
+   border: solid #8585c1 2px;
+}
+
+/*Retirando hiperlink de texto do botão do banner principal*/
+a.btn_banner:link{
+    text-decoration: none;
+}
+
+/* FIM DO BANNER*/
+
+/*MAIN*/
+/*Centralizando e definindo fonte do header*/
+div h5, h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Definindo espaçamento entre final do banner principal e próximos elementos*/
+#A1{
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+/*configurando cor, fonte e tamanho dos headers*/
+#A1 h3{
+    color: #8585c1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+/*configurando cor, fonte e tamanho dos headers*/
+#A1 h5{
+    color: #9797A6;
+    font-family: 'Mallanna' ;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*configurando cor, fonte e tamanho dos headers*/
+#A2 h5{
+    color: #9797A6;
+    font-family: 'Mallanna';
+    font-weight: bold;
+}
+
+/*Definindo espaçamento entre final do elemento A1 e fim da main*/
+#A2{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/*configurando cor, fonte e tamanho dos headers*/
+#A2 h3{
+    color: #8585c1;
+    font-family: 'Mallanna';
+    font-weight: bold;
+}
+
+/*configurando cor, fonte e tamanho dos headers*/
+#A2 h5{
+    color: #9797A6;
+    font-family: 'Mallanna';
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+}
+
+/*Botao saiba mais, aqui estão listados instruções para bordas, cor do texto,  fonte e adaptação para outros browsers*/
+.botao {
+    padding: 6px 20px;
+    border: 1px solid #8585c1;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    color: #fff !important;
+    background-color: #8585c1 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*Tira hiperlink do texto do botão*/
+a.botao:link {
+    text-decoration: none;
+}
+
+/*FIM DA MAIN*/
+
+/*INÍCIO DO FOOTER*/
+
+/*Configurando rodapé da página, cores, margens*/
+footer{
+    padding: 60px;
+    margin-bottom: auto;
+    padding-bottom: 60px;
+    background-color: #8585C1;
+}
+
+/*Configurando distanciamento de texto telefone e email da empresa*/
+#tel{
+    padding-right: 16px;
+    color: white;
+}
+
+#email{
+    padding-left: 16px;
+    color: white;    
+}
+
+/*Efeito zoom nos icones de redes sociais em diferentes browsers*/
+.social {
+     align-content: center;
+     padding: 8px;
+     -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+     color: #fff;
+ }
+
+/*Configurando efeito zoom quando em contato com cursor*/
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     color: #fff;
+}
